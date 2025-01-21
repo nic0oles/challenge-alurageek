@@ -1,0 +1,135 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fefefe;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header */
+  header {
+    background-color: #4b0082;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  /* Main */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Section Products */
+  #products-section {
+    width: 100%;
+  }
+  
+  #products-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #4b0082;
+  }
+  
+  #products-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  
+  .product-card {
+    background: #4b0082;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .product-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .product-card h3 {
+    font-size: 1rem;
+  }
+  
+  .product-card p {
+    font-size: 0.9rem;
+  }
+  
+  /* Section Add Product */
+  #add-product-section {
+    background: #ffeb3b;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  #add-product-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  #add-product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  #add-product-form input,
+  #add-product-form button {
+    padding: 0.5rem;
+    border: 2px solid #4b0082;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  #add-product-form button {
+    background: #4b0082;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #add-product-form button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: #4b0082;
+  }
+  
+  footer p {
+    margin: 0.5rem 0;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    #products-list {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+  }
+  
